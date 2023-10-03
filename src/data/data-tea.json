@@ -1,0 +1,30 @@
+[
+	{
+		"name": "Earl gray",
+		"price": "€ 1.90"
+	},
+	{
+		"name": "Herbal tea",
+		"price": "€ 1.80"
+	},
+	{
+		"name": "Darjeeling",
+		"price": "€ 2.20"
+	},
+	{
+		"name": "English breakfast",
+		"price": "€ 2.30"
+	},
+	{
+		"name": "Lapsang Souchong",
+		"price": "€ 2.50"
+	},
+	{
+		"name": "Assam",
+		"price": "€ 2.40"
+	},
+	{
+		"name": "Matcha",
+		"price": "€ 2.80"
+	}
+]

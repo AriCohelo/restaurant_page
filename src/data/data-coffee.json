@@ -1,0 +1,26 @@
+[
+	{
+		"name": "Expresso",
+		"price": "€ 1.30"
+	},
+	{
+		"name": "Coffee with milk",
+		"price": "€ 1.40"
+	},
+	{
+		"name": "Double Coffee",
+		"price": "€ 1.60"
+	},
+	{
+		"name": "Capuccino",
+		"price": "€ 1.75"
+	},
+	{
+		"name": "Iced Coffee",
+		"price": "€ 1.50"
+	},
+	{
+		"name": "Coffee and Bayley's",
+		"price": "€ 4.20"
+	}
+]

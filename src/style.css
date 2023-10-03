@@ -1,0 +1,64 @@
+body {
+	margin: 0;
+	background-color: #c9ac71;
+}
+#header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 250px;
+	width: 100vw;
+	background-image: url('./images/coffee-beans.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#tabsContainer {
+	display: flex;
+	z-index: 2;
+}
+.tabs {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80px;
+	width: 150px;
+	border-radius: 15px;
+	font-family: 'roboto', serif;
+	font-weight: 300;
+	color: white;
+	font-size: 2rem;
+	background-color: rgba(255, 255, 255, 0.25);
+	margin: 5px;
+	transition-duration: 100ms;
+	cursor: pointer;
+	-webkit-text-stroke: 0.2px black;
+}
+.tabs:active {
+	transform: translate(0, 5px);
+}
+.tabs:hover {
+	font-size: 2.1rem;
+}
+h1 {
+	font-family: 'cantoni-pro', serif;
+	font-size: 7rem;
+	text-shadow: 0 0 4px white;
+	color: white;
+	margin: 5px;
+	height: 150px;
+	transform: translate(0, -20px);
+}
+
+#coffeeContainer,
+#teaContainer,
+#sandwichesContainer {
+	display: flex;
+}
+.coffeeNameDisplay,
+.coffeePriceDisplay,
+.teaNameDisplay,
+.teaPriceDisplay,
+.sandwichesNameDisplay,
+.sandwichesPriceDisplay {
+	margin: 10px;
+}

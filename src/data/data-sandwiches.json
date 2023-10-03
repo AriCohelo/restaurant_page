@@ -1,0 +1,30 @@
+[
+	{
+		"name": "Bacon",
+		"price": "€ 4.20"
+	},
+	{
+		"name": "Sausage",
+		"price": "€ 3.50"
+	},
+	{
+		"name": "Fried liver",
+		"price": "€ 3.50"
+	},
+	{
+		"name": "Fried egg",
+		"price": "€ 2.50"
+	},
+	{
+		"name": "Ham",
+		"price": "€ 2.00"
+	},
+	{
+		"name": "Cheese",
+		"price": "€ 2.00"
+	},
+	{
+		"name": "Corn Beef",
+		"price": "€ 2.00"
+	}
+]

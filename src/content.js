@@ -1,4 +1,7 @@
 import * as menu from './menu';
+import coffee from './data/data-coffee.json';
+import tea from './data/data-tea.json';
+import sandwiches from './data/data-sandwiches.json';
 
 const createTabs = () => {
 	let tabs = [];
@@ -29,12 +32,73 @@ const header = () => {
 	document.body.appendChild(header);
 	return header;
 };
+
 const main = () => {
 	// const tab1 = document.querySelector('#tab1');
+	const menuContainer = document.createElement('div');
+	menuContainer.setAttribute('id', 'menuContainer');
+	document.body.appendChild(menuContainer);
+
+	let coffeeContainer = document.createElement('div');
+	coffeeContainer.setAttribute('id', 'coffeeContainer');
+
+	let teaContainer = document.createElement('div');
+	teaContainer.setAttribute('id', 'teaContainer');
+
+	let sandwichesContainer = document.createElement('div');
+	sandwichesContainer.setAttribute('id', 'sandwichesContainer');
+
+	tab0.addEventListener('click', () => {
+		menuContainer.innerHTML = '';
+	});
 	tab1.addEventListener('click', () => {
-		menu.coffeeDisplay();
-		menu.teaDisplay();
-		menu.sandwichesDisplay();
+		coffeeContainer.innerHTML = '';
+		coffeeContainer.appendChild(
+			menu.productNameDisplay(
+				'coffeeNameDisplay',
+				menu.productName('coffeeNames', coffee)
+			)
+		);
+		coffeeContainer.appendChild(
+			menu.productPriceDisplay(
+				'coffeePriceDisplay',
+				menu.productPrice('coffeeprices', coffee)
+			)
+		);
+		menuContainer.appendChild(coffeeContainer);
+
+		teaContainer.innerHTML = '';
+		teaContainer.appendChild(
+			menu.productNameDisplay(
+				'teaNameDisplay',
+				menu.productName('teaNames', tea)
+			)
+		);
+		teaContainer.appendChild(
+			menu.productPriceDisplay(
+				'teaPriceDisplay',
+				menu.productPrice('teaprices', tea)
+			)
+		);
+		menuContainer.appendChild(teaContainer);
+
+		sandwichesContainer.innerHTML = '';
+		sandwichesContainer.appendChild(
+			menu.productNameDisplay(
+				'sandwichesNameDisplay',
+				menu.productName('sandwichesNames', sandwiches)
+			)
+		);
+		sandwichesContainer.appendChild(
+			menu.productPriceDisplay(
+				'sandwichesPriceDisplay',
+				menu.productPrice('sandwichesprices', sandwiches)
+			)
+		);
+		menuContainer.appendChild(sandwichesContainer);
+	});
+	tab2.addEventListener('click', () => {
+		menuContainer.innerHTML = '';
 	});
 };
 const footer = () => {};

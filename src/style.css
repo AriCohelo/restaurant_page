@@ -54,11 +54,10 @@ h1 {
 #sandwichesContainer {
 	display: flex;
 }
-.coffeeNameDisplay,
-.coffeePriceDisplay,
-.teaNameDisplay,
-.teaPriceDisplay,
-.sandwichesNameDisplay,
-.sandwichesPriceDisplay {
+.nameDisplay,
+.priceDisplay {
 	margin: 10px;
+}
+#menuContainer {
+	display: flex;
 }

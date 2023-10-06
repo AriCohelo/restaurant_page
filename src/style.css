@@ -51,13 +51,41 @@ h1 {
 
 #coffeeContainer,
 #teaContainer,
-#sandwichesContainer {
+#subContainer {
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 10px;
+	font-size: 1.6rem;
+	background-color: rgba(255, 255, 255, 0);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.392);
+	border-radius: 15px;
+	padding: 15px;
+	line-height: 1.5;
 }
 .nameDisplay,
 .priceDisplay {
 	margin: 10px;
 }
 #menuContainer {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+#homeContainer {
 	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+}
+#whereContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+}
+#homeText {
+	transform: translate(0, 100px);
+	font-size: 2rem;
 }
